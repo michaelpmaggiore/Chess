@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #302E2B;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#new_image{
+    padding-left: 20px;
+}
+
+#instructions{
+    padding-left: 20px;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    -webkit-text-stroke: 0.8px black;
+    caret-color: transparent;
+    cursor: pointer;
+    /* border: 1px solid #000; Add border to each cell */
+}
+.cell2 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    -webkit-text-stroke: 0.8px black;
+    caret-color: transparent;
+    cursor: pointer;
+    /* border: 1px solid #000; Add border to each cell */
+}
+
+/* Use different background colors for odd and even rows */
+#chessboard:nth-child(odd) .cell:nth-child(even),
+#chessboard:nth-child(even) .cell:nth-child(odd) {
+    background-color: #edeed1;
+}
+
+#chessboard:nth-child(odd) .cell:nth-child(odd),
+#chessboard:nth-child(even) .cell:nth-child(even) {
+    background-color: #779952;
+}
+
+#chessboard:nth-child(even) .cell2:nth-child(odd),
+#chessboard:nth-child(odd) .cell2:nth-child(even) {
+    background-color: #779952;
+}
+
+#chessboard:nth-child(even) .cell2:nth-child(even),
+#chessboard:nth-child(odd) .cell2:nth-child(odd) {
+    background-color: #edeed1;
+}
+
+
+.selected {
+    background-color: #ffff33 !important;
+}
+
+.target {
+    width: 98px;
+    height: 98px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 212, 212) !important;
+    border: #333 1px solid;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.black {
+    color: #333;
+}
