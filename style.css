@@ -52,22 +52,22 @@ body {
 /* Use different background colors for odd and even rows */
 #chessboard:nth-child(odd) .cell:nth-child(even),
 #chessboard:nth-child(even) .cell:nth-child(odd) {
-    background-color: #edeed1;
+    background-color:#779952 ;
 }
 
 #chessboard:nth-child(odd) .cell:nth-child(odd),
 #chessboard:nth-child(even) .cell:nth-child(even) {
-    background-color: #779952;
+    background-color: #edeed1;
 }
 
 #chessboard:nth-child(even) .cell2:nth-child(odd),
 #chessboard:nth-child(odd) .cell2:nth-child(even) {
-    background-color: #779952;
+    background-color: #edeed1;
 }
 
 #chessboard:nth-child(even) .cell2:nth-child(even),
 #chessboard:nth-child(odd) .cell2:nth-child(odd) {
-    background-color: #edeed1;
+    background-color:#779952 ;
 }
 
 
